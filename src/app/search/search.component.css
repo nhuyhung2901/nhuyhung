@@ -1,0 +1,43 @@
+.group-search{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.group-search #keyword{
+    width: 85%;
+    height: 35px;
+    font-size: 1.4rem;
+    padding-left: 10px;
+}
+
+.group-search .group-btn{
+    width: 15%;
+    height: auto;
+    text-align: center;
+}
+
+.group-search .group-btn #btnAdd{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: orangered;
+}
+
+.group-search .group-btn #btnSearch{
+    width: 35px;
+    height: 35px;
+}
+
+button{
+    border: none;
+}
+
+button:focus{
+    outline: 1px solid;
+}
+
+button:hover{
+    color: silver;
+}

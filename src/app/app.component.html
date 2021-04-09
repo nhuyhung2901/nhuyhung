@@ -1,0 +1,5 @@
+<div class="container">
+    <h1>Todo List</h1>
+    <app-search [todos]="todoList"  (outputAddTodo)="newTodo($event)"></app-search>
+    <app-table  [todos]="todoList"></app-table>
+</div>

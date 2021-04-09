@@ -1,0 +1,49 @@
+.column-title{
+    width: 50%;
+    height: 35px;
+}
+
+.column-date{
+    width: 30%;
+    height: 35px;
+}
+
+.column-action{
+    width: 20%;
+    height: 35px;
+}
+
+.btn-trash{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.btn-edit{
+    width: 35px;
+    height: 35px;
+}
+
+.btn-save{
+    width: 35px;
+    height: 35px;
+}
+
+button{
+    border: none;
+}
+
+button:focus{
+    outline: 1px solid;
+}
+
+button:hover{
+    color: rgb(241, 109, 0);
+}
+
+input{
+    width: 200px;
+    height: 35px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}

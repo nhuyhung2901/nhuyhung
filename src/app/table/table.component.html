@@ -1,0 +1,39 @@
+<ng-container>
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th class="column-title">Title</th>
+                <th class="column-date">Create Date</th>
+                <th class="column-action">Action</th>
+            </tr>
+        </thead>
+        <tbody id="list-todo">
+            <ng-container *ngFor="let todo of todos">
+                <tr>
+                    <td class="row-title">
+                        <ng-container *ngIf="!todo.isEdit">{{todo.title}}</ng-container>
+                        <ng-container *ngIf="todo.isEdit"><input type="text" [(ngModel)]="todo.title"></ng-container>
+                    </td>
+                    <td class="row-date">{{todo.createDate}}</td>
+                    <td class="row-action">
+                        <button type="button" class="btn-trash" (click)="trashTodo(todo)">
+                            del
+                        </button>
+                        <ng-container>
+                            <ng-container *ngIf="!todo.isEdit">
+                                <button type="button" class="btn-edit" (click)="editTodo(todo)">
+                                    edit
+                                </button>
+                            </ng-container>
+                            <ng-container *ngIf="todo.isEdit">
+                                <button type="button" class="btn-save" (click)="saveTodo(todo)">
+                                    save
+                                </button>
+                            </ng-container>
+                        </ng-container>
+                    </td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</ng-container>

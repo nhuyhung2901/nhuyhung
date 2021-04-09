@@ -1,0 +1,26 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { SearchComponent } from './search/search.component';
+import { TableComponent } from './table/table.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    SearchComponent,
+    TableComponent
+    //Chứa component
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule
+    //Chứa module có sẵn or tự viết
+  ],
+  providers: [
+    //
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
